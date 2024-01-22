@@ -12,7 +12,7 @@ color = 'black'
 
 ### Your code here
 
-print( f'Hello, my name is {name}, I am {age} old, and my favorite color is {color}.')
+print( f'Hello, my name is {name}, I am {age} old, and my favorite color is {color}.' )
 
 ### Expected output
 # Hello, my name is Alice, I am 30 years old, and my favorite color is black.
@@ -31,7 +31,7 @@ current_year = 2023
 b_year = int(birth_year)
 c_year = int(current_year)
 
-print(f'Alice is {c_year - b_year} old.')
+print( f'Alice is {c_year - b_year} old.' )
 
 ### Expected output
 # Alice is 30 years old.
@@ -46,7 +46,7 @@ amount = 1234567.89
 
 ### Your code here
 
-print(f'${amount:.2f}')
+print( f'${amount:,.2f}' )
 
 ### Expected output
 # $1,234,567.89
@@ -69,7 +69,7 @@ item3_price = 3.59
 
 ### Your code here
 
-print(f'{item1_name}{item1_price:>26}\n{item2_name}{item2_price:>25}\n{item3_name}{item3_price:>26}')
+print( f'{item1_name}{item1_price:>26}\n{item2_name}{item2_price:>25}\n{item3_name}{item3_price:>26}' )
 
 
 ### Expected output
@@ -94,7 +94,7 @@ seconds = 30
 duration_in_minutes = hours*60 + minutes
 duration_in_hours = hours + minutes/60 
 
-print( f"Alice's pace: {duration_in_minutes/distance_km:.2f} minutes/km\nTotal time: {duration_in_hours} hours")
+print( f"Alice's pace: {duration_in_minutes/distance_km:.2f} minutes/km\nTotal time: {duration_in_hours} hours" )
 
 ### Expected output
 # Alice's pace: 5.33 minutes/km
