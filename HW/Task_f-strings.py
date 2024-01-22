@@ -91,6 +91,10 @@ seconds = 30
 
 ### Your code here
 
+duration_in_minutes = hours*60 + minutes
+duration_in_hours = hours + minutes/60 
+
+print( f"Alice's pace: {duration_in_minutes/distance_km:.2f} minutes/km\nTotal time: {duration_in_hours} hours")
 
 ### Expected output
 # Alice's pace: 5.33 minutes/km
