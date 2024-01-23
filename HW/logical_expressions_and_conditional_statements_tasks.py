@@ -17,8 +17,8 @@ else :
     print( 'Number is zero' )
 
 ## EXPECTED OUTPUT:
-"Enter a number: -2.45"
-"Number -2.45 is negative."
+# "Enter a number: -2.45"
+# "Number -2.45 is negative."
 
 
 # ---------------------------------- Task 2 ---------------------------------- #
@@ -117,6 +117,30 @@ print( f'{temp:.1f}{y} = {x:.1f}{z}' )
 """
 
 ### Your code here
+
+weight = int(input('Enter weight in kilograms: '))
+height = float(input('Enter height in meters: '))
+
+bmi = weight / (height*height)
+
+if bmi < 16 :
+    category = 'Underweight (Severe thinness)'
+elif 16 <= bmi <= 16.9 :
+    category = 'Underweight (Moderate thinness)'
+elif 17 <= bmi <= 18.4 :
+    category = 'Underweight (Mild thinness)'
+elif 18.5 <= bmi <= 24.9 :
+    category = 'Normal range'
+elif 25 <= bmi <= 29.9 :
+    category = 'Overweight (Pre-obese)'
+elif 30 <= bmi <= 34.9 :
+    category = 'Obese (Class I)'
+elif 35 <= bmi <= 39.9 :
+    category = 'Obese (Class II)'
+else :
+    category = 'Obese (Class III)'
+
+print( f'Your BMI = {bmi: .2f}, Category: {category}' )
 
 ### EXPECTED OUTPUT:
 # Enter weight in kilograms: 92
