@@ -6,15 +6,15 @@
 """
 
 ### Your code here
-num = int(input( 'Enter a number: ' ))
+# num = int(input( 'Enter a number: ' ))
 
 
-if num < 0 :
-    print( f'Number {num} is negative' )
-elif num > 0 :
-    print( f'Number {num} is positive' )
-else :
-    print( 'Number is zero' )
+# if num < 0 :
+#     print( f'Number {num} is negative' )
+# elif num > 0 :
+#     print( f'Number {num} is positive' )
+# else :
+#     print( 'Number is zero' )
 
 ### EXPECTED OUTPUT:
 # "Enter a number: -2.45"
@@ -30,12 +30,12 @@ else :
 
 ### Your code here
 
-year = int(input('Enter a year: ' ))
+# year = int(input('Enter a year: ' ))
 
-if year%4 == 0 and ( year%100 == 0 and year%400 == 0 ) :
-    print( f'{year} is a leap year' )
-else :
-    print( f'{year} is not a leap year3' )
+# if year%4 == 0 and ( year%100 == 0 and year%400 == 0 ) :
+#     print( f'{year} is a leap year' )
+# else :
+#     print( f'{year} is not a leap year3' )
 
 ### EXPECTED OUTPUT:
 # Enter a year: 2024
@@ -55,6 +55,25 @@ else :
 """
 
 ### Your code here
+
+print( f'{'*'*10}{'Fahrenheit/Celsius Converter ':^10}{'*'*11}' )
+print( f'{'# 1 => Convert to Fahrenheit':<49}#')
+print( f'{'# 1 => Convert to Celsius':<49}#')
+print( f'{'*'*50}' )
+
+choice = int(input('Enter your choice [1/2]: '))
+temp = int(input('Enter temperature in C: '))
+
+if choice == 1 :
+    x = temp*9/5+32
+    y = 'C'
+    z = 'F'
+else :
+    x = (temp-32)*5/9
+    y = 'F'
+    z = 'C'
+
+print( f'{temp:.1f}{y} = {x:.1f}{z}')
 
 ### EXPECTED OUTPUT:
 # **********Fahrenheit/Celsius Converter ***********
