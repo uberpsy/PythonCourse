@@ -7,14 +7,14 @@
 
 ### Your code here
 
-num = int(input( 'Enter a number: ' ))
+# num = int(input( 'Enter a number: ' ))
 
-if num < 0 :
-    print( f'Number {num} is negative' )
-elif num > 0 :
-    print( f'Number {num} is positive' )
-else :
-    print( 'Number is zero' )
+# if num < 0 :
+#     print( f'Number {num} is negative' )
+# elif num > 0 :
+#     print( f'Number {num} is positive' )
+# else :
+#     print( 'Number is zero' )
 
 ## EXPECTED OUTPUT:
 # "Enter a number: -2.45"
@@ -30,12 +30,12 @@ else :
 
 ### Your code here
 
-year = int(input('Enter a year: ' ))
+# year = int(input('Enter a year: ' ))
 
-if year%4 == 0 and ( year%100 == 0 and year%400 == 0 ) :
-    print( f'{year} is a leap year' )
-else :
-    print( f'{year} is not a leap year' )
+# if (year%4 == 0 and  year%100 !=0) or year%400 == 0  :
+#     print( f'{year} is a leap year' )
+# else :
+#     print( f'{year} is not a leap year' )
 
 ## EXPECTED OUTPUT:
 # Enter a year: 2024
@@ -55,7 +55,7 @@ else :
 """
 
 ### Your code here
-
+print('Hi')
 print( f'{'*'*10}Fahrenheit/Celsius Converter {'*'*11}' )
 print( f'{'# 1 => Convert to Fahrenheit':<49}#' )
 print( f'{'# 1 => Convert to Celsius':<49}#' )
@@ -79,7 +79,7 @@ else :
 
 print( f'{temp:.1f}{y} = {x:.1f}{z}' )
 
-### EXPECTED OUTPUT:
+# ## EXPECTED OUTPUT:
 # **********Fahrenheit/Celsius Converter ***********
 # # 1 => Convert to Fahrenheit                     #
 # # 2 => Convert to Celsius                        #
@@ -118,29 +118,29 @@ print( f'{temp:.1f}{y} = {x:.1f}{z}' )
 
 ### Your code here
 
-weight = int(input('Enter weight in kilograms: '))
-height = float(input('Enter height in meters: '))
+# weight = int(input('Enter weight in kilograms: '))
+# height = float(input('Enter height in meters: '))
 
-bmi = weight / (height*height)
+# bmi = weight / (height*height)
 
-if bmi < 16 :
-    category = 'Underweight (Severe thinness)'
-elif 16 <= bmi <= 16.9 :
-    category = 'Underweight (Moderate thinness)'
-elif 17 <= bmi <= 18.4 :
-    category = 'Underweight (Mild thinness)'
-elif 18.5 <= bmi <= 24.9 :
-    category = 'Normal range'
-elif 25 <= bmi <= 29.9 :
-    category = 'Overweight (Pre-obese)'
-elif 30 <= bmi <= 34.9 :
-    category = 'Obese (Class I)'
-elif 35 <= bmi <= 39.9 :
-    category = 'Obese (Class II)'
-else :
-    category = 'Obese (Class III)'
+# if bmi < 16 :
+#     category = 'Underweight (Severe thinness)'
+# elif 16 <= bmi <= 16.9 :
+#     category = 'Underweight (Moderate thinness)'
+# elif 17 <= bmi <= 18.4 :
+#     category = 'Underweight (Mild thinness)'
+# elif 18.5 <= bmi <= 24.9 :
+#     category = 'Normal range'
+# elif 25 <= bmi <= 29.9 :
+#     category = 'Overweight (Pre-obese)'
+# elif 30 <= bmi <= 34.9 :
+#     category = 'Obese (Class I)'
+# elif 35 <= bmi <= 39.9 :
+#     category = 'Obese (Class II)'
+# else :
+#     category = 'Obese (Class III)'
 
-print( f'Your BMI = {bmi: .2f}, Category: {category}' )
+# print( f'Your BMI = {bmi: .2f}, Category: {category}' )
 
 ### EXPECTED OUTPUT:
 # Enter weight in kilograms: 92
