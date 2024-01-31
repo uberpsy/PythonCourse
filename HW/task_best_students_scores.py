@@ -4,7 +4,7 @@ student_scores = {
     'Maria' : 5.5,
     'Georgy' : 5
 }
-
-max_score = max(student_scores)
  
-print(student_scores[max_score])
+for k,v in student_scores.items():
+    if v >=4 :
+        print(f'{k} - {v}')
