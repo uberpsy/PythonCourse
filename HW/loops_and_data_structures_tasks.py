@@ -59,6 +59,18 @@ words = ["hello", "world", "python", "is", "fun", "and", "useful"]
 
 ### Your code here
 
+output_dict = {}
+
+for word in words :
+    key_len = len(word)
+    if key_len not in output_dict :
+        output_dict[key_len] = [word]
+    else :
+        output_dict[key_len].append(word)
+
+
+print(output_dict)
+
 ### EXPECTED OUTPUT:
 # {5: ['hello', 'world'], 6: ['python'], 2: ['is'], 3: ['fun', 'and'], 7: ['useful']}
 
