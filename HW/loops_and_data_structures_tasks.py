@@ -95,6 +95,15 @@ sale = {'cereals', 'dairy', 'snacks', 'frozen foods', 'beverages'}
 
 ### Your code here
 
+ref_and_sale = {cat for cat in refrigerated if cat in sale}
+sale_not_ref = {cat for cat in sale if cat not in refrigerated}
+new_sale_cat = {cat for cat in refrigerated if cat not in sale}
+
+print( f'Categories both refrigerated and on sale: {ref_and_sale}' )
+print( f'Sale categories not needing refrigeration: {sale_not_ref}' )
+print( f'Suggested new sale categories from refrigerated items: {new_sale_cat}' )
+
+
 ### EXPECTED OUTPUT:
 # Categories both refrigerated and on sale: {'dairy', 'frozen foods'}
 # Sale categories not needing refrigeration: {'snacks', 'beverages', 'cereals'}
