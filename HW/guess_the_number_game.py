@@ -30,18 +30,22 @@ while True:
             break
         case _:
             print('Enter a number between 1 and 3')
+moves = 1
 
 while tries>0 :
-    user_num = int( input( f'Guess the number (between 1 and {sel_range}): ' ) )
+    user_num = int( input( f'\nGuess the number (between 1 and {sel_range}): ' ) )
+    
 
     if user_num > rand_num :
         tries = tries-1
+        moves = moves+1
         print( f'Too high! Moves left: {tries}' )
-
+        
     if user_num < rand_num :
         tries = tries-1
+        moves = moves+1
         print( f'Too low! Moves left: {tries}' )
-        
+
     if user_num == rand_num :
-        print( f'*** Congratulations! You guessed it right in {tries} moves!. ***' )
+        print( f'*** Congratulations! You guessed it right in {moves} moves!. ***' )
         break
