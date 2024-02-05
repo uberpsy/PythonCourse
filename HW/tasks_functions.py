@@ -96,5 +96,9 @@ using the sorted() built-in function.
 
 ### Your code here
 
+sort_by_last_letter = lambda list_of_strings : print(sorted(list_of_strings, key=lambda l: l[-1]))
+
+sort_by_last_letter(["banana", "apple", "cherry"])
+
 ### EXPECTED OUTPUT:
 # sort_by_last_letter(["banana", "apple", "cherry"]) should return ['banana', 'apple', 'cherry']
