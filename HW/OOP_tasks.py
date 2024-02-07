@@ -108,8 +108,8 @@ class Student:
         self.courses.remove(course_name)
 
     def list_courses(self):
-        print(f'Courses: {self.courses}')
-
+        print(f'Courses: {", ".join(self.courses)}')
+       
 
 # TEST
 student1 = Student("Alice", 12345)
