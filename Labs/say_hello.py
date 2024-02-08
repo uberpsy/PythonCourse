@@ -7,5 +7,12 @@
 #else:
 #    print('You cannot use my App!')
 
+# def simple_generator():
+#     yield 1
+#     yield 2
+#     yield 3
 
-                                
+# numbers = simple_generator()
+# print(next(numbers))
+# print(next(numbers))
+# print(next(numbers)) 
