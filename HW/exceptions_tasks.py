@@ -37,12 +37,7 @@ while True:
     else: 
         print(f'You entered: {valid_number}')
         exit(0)
-        
-            # print(f'You entered: {valid_number}')
-            
     
-
-
 # Example usage:
 # try:
 #     valid_number = get_numeric_input()
