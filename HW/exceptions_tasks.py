@@ -78,6 +78,32 @@ The function must raise InvalidUserName exception if user name is not valid.
 
 ### Your code here
 
+class InvalidUserName(Exception):
+    pass
+
+def validate_name(name):
+    if len(name) < 2:
+        raise InvalidUserName('Error: Name must be at least 2 characters long.')
+    if not name.isalpha():
+        raise InvalidUserName('Error: Name must contain only letters.')
+    if not name[0].isupper():
+        raise InvalidUserName('Error: Name must start with an uppercase letter.')
+
+def get_valid_username():
+    while True:
+        try:
+            name = input('Please enter your name: ')
+            validate_name(name)
+            return name
+        except InvalidUserName as e:
+            print(e)
+
+try:
+    username = get_valid_username()
+    print(f"Hello, {username}!")        
+except KeyboardInterrupt:
+    print('\nProgram exited by user.')
+
 # Example usage:
 # try:
 #     username = get_valid_username()
