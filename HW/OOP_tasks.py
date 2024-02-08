@@ -109,7 +109,6 @@ class Student:
 
     def list_courses(self):
         print(f'Courses: {", ".join(self.courses)}')
-       
 
 # TEST
 student1 = Student("Alice", 12345)
