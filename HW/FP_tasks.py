@@ -79,9 +79,13 @@ quotes = [
 ]
 
 
-
-
 ### YOUR CODE HERE
+
+def words_count(quotes):
+    words_in_quote = map(lambda quote: len(quote.split()) , quotes)
+    return list(words_in_quote)
+
+print(words_count(quotes))
 
 ### EXPECTED OUTPUT:
 # [21, 21]
