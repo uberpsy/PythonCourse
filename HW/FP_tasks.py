@@ -55,7 +55,11 @@ quotes = [
 
 ### YOUR CODE HERE
 
+def fitler_letter_t(quotes):
+    filtered = map(lambda quote: list(filter(lambda word: word.startswith('t') and len(word)>3, quote.split())), quotes)
+    return list(filtered)
 
+print(fitler_letter_t(quotes))
 
 ### EXPECTED OUTPUT:
 # [['travels', 'than'], ['that', 'trying']]
@@ -73,6 +77,9 @@ quotes = [
     'Nothing travels faster than the speed of light, with the possible exception of bad news, which obeys its own special laws',
     'A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.'
 ]
+
+
+
 
 ### YOUR CODE HERE
 
