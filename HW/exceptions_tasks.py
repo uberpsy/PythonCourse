@@ -18,26 +18,28 @@ The function must handle potential errors, such as:
 
 ### Your code here
 
+
 def get_numeric_input():
-    number = input('Please enter a number: ')
+    number = input("Please enter a number: ")
     return number
+
 
 while True:
     try:
         valid_number = get_numeric_input()
         if not valid_number:
-            raise ValueError('Input cannot be empty.')  
-        number = float(valid_number) 
+            raise ValueError("Input cannot be empty.")
+        number = float(valid_number)
     except KeyboardInterrupt:
         print("\nProgram exited by user.")
         exit(0)
     except ValueError as v:
-        print(f'\nInvalid input: {v}')
-        
-    else: 
-        print(f'You entered: {valid_number}')
+        print(f"\nInvalid input: {v}")
+
+    else:
+        print(f"You entered: {valid_number}")
         exit(0)
-    
+
 # Example usage:
 # try:
 #     valid_number = get_numeric_input()
@@ -78,31 +80,35 @@ The function must raise InvalidUserName exception if user name is not valid.
 
 ### Your code here
 
+
 class InvalidUserName(Exception):
     pass
 
+
 def validate_name(name):
     if len(name) < 2:
-        raise InvalidUserName('Error: Name must be at least 2 characters long.')
+        raise InvalidUserName("Error: Name must be at least 2 characters long.")
     if not name.isalpha():
-        raise InvalidUserName('Error: Name must contain only letters.')
+        raise InvalidUserName("Error: Name must contain only letters.")
     if not name[0].isupper():
-        raise InvalidUserName('Error: Name must start with an uppercase letter.')
+        raise InvalidUserName("Error: Name must start with an uppercase letter.")
+
 
 def get_valid_username():
     while True:
         try:
-            name = input('Please enter your name: ')
+            name = input("Please enter your name: ")
             validate_name(name)
             return name
         except InvalidUserName as e:
             print(e)
 
+
 try:
     username = get_valid_username()
-    print(f"Hello, {username}!")        
+    print(f"Hello, {username}!")
 except KeyboardInterrupt:
-    print('\nProgram exited by user.')
+    print("\nProgram exited by user.")
 
 # Example usage:
 # try:

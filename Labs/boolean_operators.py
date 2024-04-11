@@ -6,3 +6,8 @@
 
 #x = '2345'
 #print( not x )
+
+s = 'x=3'
+
+b = s.split('=')
+print(b[0])

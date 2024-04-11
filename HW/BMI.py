@@ -5,5 +5,5 @@ w = 115
 h = 1.89
 
 # body mass index
-bmi = w/(h*h)
-print( round( bmi,2 ) )
+bmi = w / (h * h)
+print(round(bmi, 2))
