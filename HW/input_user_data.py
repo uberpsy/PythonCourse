@@ -8,6 +8,12 @@ def data_input():
             break
         name = input("Enter user name: ")
         age = int(input("Enter user age: "))
+        while True:
+            if age <= 0 :
+                print('Age must be positive and bigger than zero number)')
+                age = int(input("Enter user age: "))
+            else:
+                break
         city = input("Enter user city: ")
         user_data.append({'name': name, 'age': age, 'city': city})
 
